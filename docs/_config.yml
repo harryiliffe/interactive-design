@@ -3,3 +3,16 @@ description: This is the documentation for the interactive wall I am designing
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+
+
+sections: [
+    ['overview', 'Overveiw'],
+    ['hardware', 'Hardware'],
+    ['software', 'Software'],
+    # ['ref', 'Reference'],
+    # ['dev', 'Developers'],
+    # ['post', 'Posts']
+]
+
+baseurl: 'https://harryiliffe.github.io/interactive-wall'
+imageurl: "/images/"
