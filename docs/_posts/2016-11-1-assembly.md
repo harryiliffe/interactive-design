@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 categories: hardware
 title: "Assembly"
 subtitle: "Putting together your components"
