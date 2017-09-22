@@ -1,3 +1,4 @@
 .gitmodules
 .DS_Store
-docs/_sites/*
+docs/_site
+
