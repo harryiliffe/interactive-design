@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Hardware Required | Interactive Wall</title>
+<meta property="og:title" content="Hardware Required" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This page provides an overview of the hardware that Brian used in his system and recommends. Please do lots of research to find the best solution for your set up and goals." />
+<meta property="og:description" content="This page provides an overview of the hardware that Brian used in his system and recommends. Please do lots of research to find the best solution for your set up and goals." />
+<link rel="canonical" href="http://localhost:4000/hardware/2016/11/30/listofhardware.html" />
+<meta property="og:url" content="http://localhost:4000/hardware/2016/11/30/listofhardware.html" />
+<meta property="og:site_name" content="Interactive Wall" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-11-30T00:00:00+13:00" />
+<script type="application/ld+json">
+{"name":null,"description":"This page provides an overview of the hardware that Brian used in his system and recommends. Please do lots of research to find the best solution for your set up and goals.","author":null,"@type":"BlogPosting","url":"http://localhost:4000/hardware/2016/11/30/listofhardware.html","publisher":null,"image":null,"headline":"Hardware Required","dateModified":"2016-11-30T00:00:00+13:00","datePublished":"2016-11-30T00:00:00+13:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/hardware/2016/11/30/listofhardware.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=c9af679b8e65ebb283cfc7cbffbb7d425e9b2112">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Interactive Wall</h1>
+        <p>This is the documentation for the interactive wall I am designing</p>
+
+        
+          <p class="view"><a href="http://github.com/harryiliffe/InteractiveWall">View the Project on GitHub <small></small></a></p>
+        
+
+        <div id="navigation" class="col-sm-2">
+            <ul class="nav nav-list">
+    <li><a class="nav-home nav-header" href="/">Home</a></li>
+    
+        
+        
+        
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Overveiw</a>
+          <div class="dropdown-content">
+            
+                  <a href="/overview/2016/11/30/why.html">Why?</a>
+            
+          </div>
+        </li>
+    
+        
+        
+        
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Hardware</a>
+          <div class="dropdown-content">
+            
+                  <a href="/hardware/2016/11/30/listofhardware.html">Hardware Required</a>
+            
+                  <a href="/hardware/2016/11/01/assembly.html">Assembly</a>
+            
+          </div>
+        </li>
+    
+        
+        
+        
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Software</a>
+          <div class="dropdown-content">
+            
+                  <a href="/software/2016/11/01/crontab.html">Crontab</a>
+            
+                  <a href="/software/2016/11/01/code.html">Code</a>
+            
+          </div>
+        </li>
+    
+<!-- List additional links. It is recommended to add a divider
+    e.g. <li class="divider"></li> first to break up the content. -->
+</ul>
+
+        </div>
+
+        
+
+      </header>
+      <section>
+
+      <p>This page provides an overview of the hardware that Brian used in his system and recommends.
+Please do lots of research to find the best solution for your set up and goals.</p>
+
+<h3 id="raspberry-pi">Raspberry Pi</h3>
+<p>The Raspberry Pi will be the main controller for the system. It will be in charge of schedule each valve to turn on and off at predefined times</p>
+
+<h3 id="power-supply">Power Supply</h3>
+<p>The power supply needs to be reliable to prevent the Raspberry Pi from restarting and possibly being corrupted. Ideally, the system is connected to the mains with a back up battery system also in place. The Raspberry Pi requires 5v and most common solenoid valves require 12v. This mean that you will also need a way to shifting 12v to 5v for the Pi.</p>
+
+<p>Brian’s system used a wall outlet AC supply to power a 12v intelligent battery charger and a 12v AGM battery. The battery powered both the bank of relays (for the solenoids) and a 12v to 5v, DC to DC converter.</p>
+
+<h3 id="water-control-system">Water Control System</h3>
+<p>The most commonly available solution is solenoid water valves which are available at many suppliers. Most solenoids require a 12v signal which means a relay from the pi is required. A relay takes the Raspberry Pi’s GPio signal and amplifies it to an appropriate voltage and current for each solenoid.
+Brian used a DC 12V Low Level Trigger Optocoupler Isolator Relay Board. This board takes 8 inputs that can be triggered using the Pi’s GPio pins (low level trigger) and converts it to 12v DC for the solenoids. These boards can be easily found on <a href="http://www.ebay.com/sch/i.html?_odkw=DC+12v+relay+board+8+ch&amp;_osacat=0&amp;_from=R40&amp;_trksid=p2045573.m570.l1313.TR0.TRC0.H0.XDC+12v+relay+board+8+ch+octocoupler.TRS0&amp;_nkw=DC+12v+relay+board+8+ch+octocoupler&amp;_sacat=0" title="This is an example" target="_blank_">ebay</a> and other internet shopping sites.</p>
+
+<h3 id="connectivity">Connectivity</h3>
+<p>It is recommended to have your Pi connected to a network
+If you want to be able to access your Pi remotely t will be necessary to have it connected to a network. This can be achieved by using a USB wifi dongle or connecting the Raspberry directly to your router via an ethernet cable.</p>
+
+<h3 id="housing">Housing</h3>
+<p>Housing the Pi and other components is a important step.
+Brian recommended mounting all the components on a plastic sheet. This allows you to run cables through holes and underneath the sheet providing a clean, impressive looking system. Brian then used steel framing to create box to place everything in.
+If the system is going to be based outdoors or in a particularly dusty shed then investing time into find a good water/dust tight housing is a worth while expense.</p>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="http://github.com/harryiliffe">harryiliffe</a></p>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    <script>
+            function orderNav() {
+                var list,
+                    section,
+                    header,
+                    sections = [],
+                    lists = {},
+                    headers = {};
+                var navUl = document.querySelectorAll('#navigation ul')[0],
+                    navLis = document.querySelectorAll('#navigation ul li');
+                if (!navUl) return;
+                for (var i = 0; i < navLis.length; i++) {
+                    var order, li = navLis[i];
+                    if (li.classList.contains('nav-header')) {
+                        section = li.textContent || li.innerText;
+                        sections.push(section);
+                        headers[section] = li;
+                        continue;
+                    }
+                    if (!lists[section]) {
+                        lists[section] = [];
+                    }
+                    order = parseFloat(li.getAttribute('data-order'))
+                    lists[section].push([order, li]);
+                }
+                for (var i = 0; i < sections.length; i++) {
+                    section = sections[i];
+                    list = lists[section].sort(function(a, b) {
+                        return a[0] - b[0];
+                    });
+                    if (header = headers[section]) {
+                        navUl.appendChild(header);
+                    }
+                    for (var j = 0; j < list.length; j++) {
+                        navUl.appendChild(list[j][1]);
+                    }
+                }
+            }
+            if (document.querySelectorAll) orderNav();
+        </script>
+
+  
+  </body>
+</html>
