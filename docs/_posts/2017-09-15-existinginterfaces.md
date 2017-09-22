@@ -6,7 +6,7 @@ subtitle: "An exploration of existing interfaces"
 order: 1
 ---
 
-#### iPhone Home Button Analysis
+### iPhone Home Button Analysis
 
 The iPhone home button is an interesting example of interaction design. As the iPhone is used by a wide range of people and, for the most part, defined the category of the smartphone, it was critical that the home button be well thought through.
 It was designed to provide a safe, always accessible method to quickly return the user to a familiar area of the device.
