@@ -14,5 +14,5 @@ sections: [
     # ['post', 'Posts']
 ]
 
-baseurl: ''
+baseurl: 'https://harryiliffe.github.io/interactive-wall'
 imageurl: "/images/"
