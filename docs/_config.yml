@@ -14,5 +14,5 @@ sections: [
     # ['post', 'Posts']
 ]
 
-baseurl: ''
+baseurl: 'interactive-wall'
 imageurl: "/images/"
