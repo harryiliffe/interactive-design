@@ -4,3 +4,9 @@ description: This is the documentation for the interactive wall I am designing
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+=======
+title: Minimal theme
+description: Minimal is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-minimal
