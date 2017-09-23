@@ -10,9 +10,6 @@ sections: [
     ['week9', 'Week 9'],
     ['week10', 'Week 10'],
     ['week11', 'Week 11'],
-    # ['ref', 'Reference'],
-    # ['dev', 'Developers'],
-    # ['post', 'Posts']
 ]
 
 
