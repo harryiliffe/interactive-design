@@ -3,7 +3,7 @@ layout: default
 categories: week11
 title: "Final Layout"
 subtitle: ""
-order: 8
+order: 9
 ---
 
 Taking all that I had learnt from the paper prototyping i developed a final layout for the wall, including the final button design.
@@ -11,3 +11,9 @@ Taking all that I had learnt from the paper prototyping i developed a final layo
 Below is mockup on illustrator.
 
 [illustrator mockup]({{site.imageurl}}illustratorlayout.jpg)
+
+For the final functional prototype I will not be including the bottom few branchs of the tree due to the number of capacitive buttons I have.
+
+[illustrator actual mockup]({{site.imageurl}}illustratorlayoutfinal.jpg)
+
+The final will be made out of a layer of plywood and cardboard with cut outs for the led paths between the buttons.

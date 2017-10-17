@@ -12,6 +12,7 @@ I cut out paper circles and labeled each of the buttons that I will be using.
 After marking out a 600mm x 1000mm space on the white board I began arranging them in the way I thought would be best.
 
 They were arranged in a logical order left to right (based on requirements for attending/using) and an ease of use order from top to bottom (so the "easiest" sessions/machines were at the top and harder machines at the bottom).
+
 ![layouttest1]({{ site.url }}/interactive-wall/assets/img/layouttest.jpg)
 
 
