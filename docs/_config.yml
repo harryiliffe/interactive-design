@@ -8,8 +8,8 @@ theme: jekyll-theme-minimal
 sections: [
     ['week8', 'Week 8'],
     ['week9', 'Week 9'],
-    ['week10', 'Week 10'],
     ['week11', 'Week 11'],
+    ['week12', 'Week 12'],
 ]
 
 
