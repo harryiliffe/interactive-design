@@ -20,4 +20,4 @@ A couple of justifications are needed for my design desicions:
 
 2. There are 2 different button types, **sessions** and **machines**. These are differentiated through the rotation of the button. Whilst the **sessions** are orientated portrait, the **machines** are landscape.
 
-[button orientation]({{site.imageurl}}layoutfinal4.png)
+![button orientation]({{site.imageurl}}layoutfinal4.png)
