@@ -6,7 +6,6 @@ subtitle: "Notes from class"
 order: 6
 ---
 
-###
 
 Some to the questions that arose in class and my responses.
 
